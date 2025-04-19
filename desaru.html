@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desaru</title>
+
+    <style>
+        .container{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .upbar{
+            background-color: #323232;
+            padding-left: 10px;
+            padding-top: 10px;
+            height: 30px;
+            font-weight: bold;
+        }
+
+        .upbar a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .upbar :hover{
+            color: #1e90ff;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            min-height: 100px;
+            width: 100%;
+            background-color: #151616;
+        }
+
+        .header p{
+            color: white;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        
+        .media-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #151616;
+        }
+        
+        .media-item {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .media-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+        }
+        
+        .media-item video {
+            width: 100%;
+            border-radius: 3px;
+        }
+        
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            color: white;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            background-color: #151616;
+            align-items: center;
+            justify-content: center;
+            min-height: 50px;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="upbar">
+            <a href="campus.html">BACK TO CAMPUS LIFE</a>
+        </div>
+
+        <div class="header">
+            <p>Welcome to this page, this page will tell about my experience while studying at Universiti Tun Hussein Onn Malaysia (UTHM), when I was studying at the university I have made very good friends, and understand me very much, even though they have an age difference from me, they are not shy to be friends with me. Then, on this page I put my vacation experience at Desaru Beach, it was the first time I set foot on this beach because I come from the north of Malaysia, that is Perlis. In this page, I will some put of photos of memories that I make at the Desaru Beach with my friends.</p>
+        </div>
+
+        <div class="media-gallery">
+
+            <div class="media-item">
+                <img src="d1.jpeg" alt="Enjoy the view of ocean">
+                <div class="caption">Enjoy the view of ocean</div>
+            </div>
+            
+            <div class="media-item">
+                <img src="d2.jpeg" alt="Group Photo">
+                <div class="caption">Group Photo</div>
+            </div>
+            
+            <div class="media-item">
+                <img src="d3.jpeg" alt="Another Group Photo">
+                <div class="caption">Another Group Photo</div>
+            </div> 
+            
+            <div class="media-item">
+                <img src="d4.jpeg" alt="Look at the interesting shop">
+                <div class="caption">Look at the interesting shop</div>
+            </div>
+
+            <div class="media-item">
+                <video controls autoplay loop muted="false">
+                    <source src="dv1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="caption">Enjoy the landscape</div>
+            </div>
+
+            <div class="media-item">
+                <video controls autoplay loop muted="false">
+                    <source src="dv2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="caption">Video of first time take at Desaru Beach</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy Syafi Humaidi 2025
+        </div>
+
+    </div>
+</body>
+</html>
