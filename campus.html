@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: #151616;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .upbar{
+            background-color: #323232;
+            color: white;
+            padding-left: 10px;
+            padding-top: 5px;
+            height: 30px;
+            font-weight: bold;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            min-height: 100px;
+            width: 100%;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .logo img{
+            border-radius: 8px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 50px;
+            margin-top: 10px;
+            padding: 0 20px; 
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-left a, .nav-right a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-left a:not(:last-child)::after {
+            content: "|";
+            position: absolute;
+            right: -10px;
+            color: white;
+        }
+
+        .nav-left a:hover {
+            color: #1e90ff; 
+        }
+
+        .nav-right a:hover {
+            color: #70f468;
+
+        }
+
+        .nav-right a[target="_blank"] {
+            position: relative;
+        }
+        
+        .nav-right a[target="_blank"]:hover::after {
+            content: "From latest update can click here";
+            position: absolute;
+            bottom: 100%;
+            left: 40%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            white-space: nowrap;
+            text-transform: none;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            min-height: 300px;
+            margin-top: 10px;
+            justify-content: space-between;
+          
+        }
+
+        .side_bar {
+            display: flex;
+            flex-direction: column;
+            background-color: #151616;
+            flex-basis: 20%;
+            color: aliceblue;
+            padding-left: 20px;
+        }
+
+        .side_bar a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .side_bar :hover{
+            color: #70f468;
+        }
+
+        .side_bar ul{
+            list-style-type: none;
+        }
+
+        .content li {
+            margin-top: 5px;
+        }
+
+        .body_area {
+            display: flex;
+            flex-direction: column;
+            background-color: #151616;
+            flex-basis: 100%;
+            align-items: center;
+            margin-bottom: 400px;
+        }
+
+        .image-gallery {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            background-color: #151616;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            min-height: 50px;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="upbar">
+            MY CAMPUS LIFE
+        </div>
+
+        <div class="logo">
+            <img src="logo-uthm-web.png" alt="" width="300">
+        </div>
+
+        <div class="navigation">
+            <div class="nav-left">
+                <a href="index.html">BACK TO HOME</a>
+                <a href="kepong.html">BUKIT KEPONG PROGRAM</a>
+                <a href="desaru.html">HOLIDAY DESARU</a>
+                <a href="sarong.html">SARONG WALK EVENT</a>
+            </div>
+            
+            <div class="nav-right">
+                <a href="https://www.instagram.com/p/B6AtuHzA3rk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">VISIT MY SOCIAL MEDIA</a>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="side_bar">
+                Preferred Links:
+                <ul>
+                    <li><a href="https://vt.tiktok.com/ZSrgrgGUa/" target="_blank">BUKIT KEPONG</a></li>
+                    <li><a href="https://www.facebook.com/dailyjohor0/posts/pantai-desaru-kota-tinggipantai-yang-tidak-asing-di-kalangan-orang-johor-dan-pel/600496475510186/" target="_blank">DESARU</a></li>
+                    <li><a href="https://www.instagram.com/p/DHpyYw1yhRt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">SARONG WALK</a></li>
+                </ul>
+            </div>
+
+            <div class="body_area">
+                <div class="image-gallery">
+                    <img src="pd1.jpeg" alt="Image 1" width="300">
+                    <img src="desaru-1.jpeg" alt="Image 2" width="300">
+                    <img src="sarong-1.jpeg" alt="Image 3" width="300">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            &copy Syafi Humaidi 2025
+        </div>
+   
+    </div>
+</body>
+</html>
